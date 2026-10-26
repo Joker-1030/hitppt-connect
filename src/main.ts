@@ -154,7 +154,7 @@ class ConnectSettings extends PluginSettingTab {
   constructor(app: App, private plugin: HitPptConnect) { super(app, plugin); }
   display() {
     const el = this.containerEl; el.empty();
-    el.createEl('h2',{text:'HitPPT Connect'});
+    new Setting(el).setName('HitPPT Connect').setHeading();
     el.createEl('p',{text:`${this.plugin.status} · ${this.app.vault.getName()}`});
     el.createEl('p',{text:'只获取你在网页选择或主动发送的 Markdown。正文在 HitPPT 保留 48 小时，不同步整个 Vault，不自动读取图片或关联笔记。'});
     if (this.plugin.settings.bindingId) {

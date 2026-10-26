@@ -16,7 +16,7 @@ export type ObsidianRequest = {
 };
 export function obsidianPath(value: string, folder = false): string {
   // Reject ASCII control characters in untrusted local paths.
-  // eslint-disable-next-line no-control-regex
+  // eslint-disable-next-line no-control-regex -- Control characters must be rejected in untrusted vault paths.
   if (typeof value !== "string" || value.length > 1024 || /[\\\u0000-\u001f\u007f]/u.test(value) || value.startsWith("/") || /^[a-z]:/i.test(value)) throw new Error("路径不符合要求");
   if (folder && value === "") return value;
   const parts = value.split("/");
