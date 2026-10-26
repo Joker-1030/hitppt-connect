@@ -1,0 +1,9 @@
+{
+  "id": "hitppt-connect",
+  "name": "HitPPT Connect",
+  "version": "0.1.0",
+  "minAppVersion": "1.11.4",
+  "description": "Use selected Markdown notes as temporary reference materials for HitPPT presentations.",
+  "author": "HitPPT",
+  "isDesktopOnly": true
+}

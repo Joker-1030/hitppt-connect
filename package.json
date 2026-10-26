@@ -1,0 +1,19 @@
+{
+  "name": "@hitppt/obsidian-connect",
+  "private": true,
+  "version": "0.1.0",
+  "scripts": {
+    "build": "node build.mjs",
+    "typecheck": "tsc --noEmit",
+    "lint": "tsc --noEmit",
+    "test": "node build.mjs && node --test test/*.test.cjs"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.0",
+    "esbuild": "0.25.12",
+    "jszip": "^3.10.2",
+    "obsidian": "1.11.4",
+    "typescript": "^5.8.0"
+  },
+  "license": "MIT"
+}
