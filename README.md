@@ -2,7 +2,7 @@
 
 Use selected Markdown notes as temporary reference material for presentations in HitPPT. Browse authorized folders from HitPPT, choose notes, and confirm before their contents leave your vault. You can also send the current note or selected notes from Obsidian to HitPPT.
 
-**Release preparation:** this plugin has not yet been listed in the Obsidian community directory. The production connector is not yet available; the production package cannot currently complete pairing. This notice must be updated only after production verification.
+**Service availability:** the production HitPPT connector is available. Version 0.1.2 is being submitted to the Obsidian community directory; a GitHub release does not by itself mean directory approval.
 
 HitPPT Connect is a third-party integration, not an Obsidian first-party product. It requires **Obsidian desktop 1.11.4 or later** and a **HitPPT account**. The plugin interface is currently in Chinese. Mobile is not supported.
 
@@ -39,7 +39,7 @@ Limits: 512 KiB per note, 20 notes and 5 MiB per read, and 1 GiB of active tempo
 - **Path missing:** when connected, the original path could not be found. The note may have moved, been renamed or been deleted.
 - **Permission denied:** check the authorized folders. Hidden paths and paths outside the selected scope cannot be read.
 - **Expired authorization:** pair again. Credentials are revocable and expire after 90 days without a connection.
-- **Pairing unavailable on production:** the release-preparation notice above applies until the production connector is deployed and verified.
+- **Pairing unavailable:** check your connection and refresh the pairing code from the HitPPT file library. If the problem persists, report the redacted error in this repository’s Issues tab.
 
 Use this repository's Issues tab for plugin bugs. Include the plugin and Obsidian versions and a redacted error description; do not post pairing codes, credentials, private notes or account details.
 
